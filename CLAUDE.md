@@ -15,15 +15,30 @@ applications), highlights services, and captures leads via an email signup form.
 
 - `index.html` — single-page landing site (header/nav, hero, why-us, services, about, signup, footer)
 - `src/css/style.css` — global styles (navy + blue accent palette, responsive grid layout)
-- `src/js/main.js` — smooth-scroll nav links and email signup form validation
+- `src/js/main.js` — smooth-scroll nav links and email signup form handling
+- `src/js/validation.js` — shared `isValidEmail()` helper, used by `main.js` and unit tests
 - `src/pages/` — reserved for additional page templates (currently empty)
 - `src/assets/images/` — image assets (currently empty)
+- `tests/` — unit tests (Node's built-in test runner)
 
 ## Email signup form
 
 The signup form (`#signup-form` in `index.html`) posts to a Formspree endpoint. The current
 `action` attribute is a placeholder (`https://formspree.io/f/yourFormID`) — to receive
 submissions, sign up at https://formspree.io, create a form, and replace the placeholder ID.
+
+Email addresses are validated client-side by `isValidEmail()` in `src/js/validation.js`, which
+only accepts `.com`, `.org`, `.edu`, `.gov`, `.net`, and `.io` domain extensions.
+
+## Testing
+
+Run the unit tests for email validation with:
+
+```bash
+npm test
+```
+
+(equivalent to `node --test`, no dependencies required).
 
 ## Running locally
 

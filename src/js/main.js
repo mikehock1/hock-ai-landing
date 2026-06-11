@@ -17,12 +17,10 @@ if (signupForm) {
   const emailError = document.getElementById('email-error');
   const successMessage = document.getElementById('form-success');
 
-  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
   signupForm.addEventListener('submit', (event) => {
     const emailValue = emailInput.value.trim();
 
-    if (!emailValue || !emailPattern.test(emailValue)) {
+    if (!emailValue || !isValidEmail(emailValue)) {
       event.preventDefault();
       emailInput.classList.add('invalid');
       emailError.textContent = 'Please enter a valid email address.';

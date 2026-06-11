@@ -1,0 +1,7 @@
+{
+  "name": "hock-ai-landing",
+  "private": true,
+  "scripts": {
+    "test": "node --test"
+  }
+}
