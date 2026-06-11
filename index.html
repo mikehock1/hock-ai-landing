@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hock AI Engineering Consultants</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">Hock AI Engineering Consultants</div>
+      <nav class="nav">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#signup">Contact</a>
+      </nav>
+      <a href="#signup" class="btn btn-primary nav-cta">Get Started</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>Years of Expertise Building Production AI Applications</h1>
+        <p class="hero-subtitle">
+          We help companies design, build, and ship reliable AI-powered software &mdash;
+          from early prototypes to production systems that scale.
+        </p>
+        <a href="#signup" class="btn btn-primary btn-large">Get in Touch</a>
+      </div>
+    </section>
+
+    <section id="why-us" class="section">
+      <div class="container">
+        <h2 class="section-title">Why Work With Us</h2>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Proven AI Experience</h3>
+            <p>
+              Years of hands-on experience designing and deploying AI applications,
+              giving us the judgment to avoid costly missteps.
+            </p>
+          </div>
+          <div class="card">
+            <h3>End-to-End Development</h3>
+            <p>
+              From initial strategy through architecture, implementation, and launch &mdash;
+              we cover the full lifecycle of your AI project.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Production-Ready Solutions</h3>
+            <p>
+              We focus on practical, maintainable systems built to perform reliably
+              in real-world conditions, not just demos.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <div class="grid grid-2">
+          <div class="card">
+            <h3>AI Strategy &amp; Roadmapping</h3>
+            <p>Identify the highest-impact opportunities for AI in your business and plan a practical path to get there.</p>
+          </div>
+          <div class="card">
+            <h3>Custom AI Application Development</h3>
+            <p>Design and build bespoke AI-powered applications tailored to your workflows and goals.</p>
+          </div>
+          <div class="card">
+            <h3>Integration &amp; Automation</h3>
+            <p>Connect AI capabilities to your existing tools, data, and processes for seamless adoption.</p>
+          </div>
+          <div class="card">
+            <h3>Technical Advisory</h3>
+            <p>Ongoing guidance on architecture, tooling, and best practices as your AI initiatives mature.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container about-inner">
+        <h2 class="section-title">About Us</h2>
+        <p>
+          Hock AI Engineering Consultants brings years of experience building AI applications
+          across industries. We've worked through the practical challenges of taking AI from
+          idea to production, and we bring that experience to every engagement &mdash; helping
+          you avoid common pitfalls and get to a working solution faster.
+        </p>
+      </div>
+    </section>
+
+    <section id="signup" class="section section-cta">
+      <div class="container signup-inner">
+        <h2 class="section-title">Let's Build Something Together</h2>
+        <p class="signup-subtitle">
+          Tell us a bit about your project and we'll get back to you to discuss how we can help.
+        </p>
+
+        <!--
+          To receive form submissions, sign up for a free account at https://formspree.io,
+          create a new form, and replace "yourFormID" below with your actual Formspree form ID.
+        -->
+        <form id="signup-form" class="signup-form" action="https://formspree.io/f/yourFormID" method="POST" novalidate>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name">
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@company.com" required>
+            <span class="form-error" id="email-error"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-large">Get in Touch</button>
+          <p class="form-success" id="form-success">Thanks! We'll be in touch soon.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Hock AI Engineering Consultants</p>
+      <p><a href="mailto:mike@essremodel.com">mike@essremodel.com</a></p>
+    </div>
+  </footer>
+
+  <script src="src/js/main.js"></script>
+</body>
+</html>
